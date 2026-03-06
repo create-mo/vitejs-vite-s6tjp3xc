@@ -52,7 +52,7 @@ const AsyncImage = ({ src, alt }: { src: string; alt: string }) => {
   );
 };
 
-export const ScoreCanvas = () => {
+const ScoreCanvas = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoom] = useState(0.6);
   const [cameraY, setCameraY] = useState(0); // Вертикальное смещение камеры
@@ -543,6 +543,8 @@ export const ScoreCanvas = () => {
 };
 
 // Стили
+
+export default ScoreCanvas;
 const zoomBtnStyle = {
   width: '40px',
   height: '40px',
